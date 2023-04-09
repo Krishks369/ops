@@ -11,7 +11,7 @@ parameters:
   flavor:
     type: string
     description: flavor used by the bastion
-    default: a1-ram2-disk20-perf1
+    default: m1.medium
   whitelisted_ip_range:
     type: string
     description: ip range allowed to connect to the bastion and the k8s api server
