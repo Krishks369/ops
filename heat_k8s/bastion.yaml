@@ -3,11 +3,11 @@ parameters:
   image:
     type: string
     description: Image used for VMs
-    default: Ubuntu 20.04 LTS Focal Fossa
+    default: amphora-x64-haproxy
   ssh_key:
     type: string
     description: SSH key to connect to VMs
-    default: yubikey
+    default: test
   flavor:
     type: string
     description: flavor used by the bastion
@@ -25,7 +25,7 @@ resources:
   bastion_floating_ip:
     type: OS::Neutron::FloatingIP
     properties:
-      floating_network: public
+      floating_network: private
   bastion_port:
     type: OS::Neutron::Port
     properties:
