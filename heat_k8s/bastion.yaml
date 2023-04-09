@@ -25,7 +25,7 @@ resources:
   bastion_floating_ip:
     type: OS::Neutron::FloatingIP
     properties:
-      floating_network: ext-floating1
+      floating_network: public
   bastion_port:
     type: OS::Neutron::Port
     properties:
